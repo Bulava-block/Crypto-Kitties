@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academy kitties</title>
+    <script type="text/javascript" src="assets/js/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <script src="assets/bootstrap/js/popper.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/web3.min.js"></script>
+    <script src="./abi.js"></script>
+
+    <link rel="stylesheet" href="assets/css/factory.css" />
+    <link rel="stylesheet" href="assets/css/mystyle.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/cats.css" />
+  </head>
+
+  <body>
+    <h2 class="kittieFarm">Kittie Farm</h2>
+    <button
+    id="startMarketplace"
+      type="button"
+      onclick="window.location.href='index.html';"
+      class="btn btn-danger btn-lg btn-rounded start"
+    >
+      Start
+    </button>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+      <ul class="navbar-nav persik">
+        <li class="nav-item">
+          <a class="nav-link fint2" href="mainPage.html">Home</a>
+        </li>
+        <li class="">
+          <a class="nav-link fint2" href="kittiesYouOwn.html"
+            >Kitties you own</a
+          >
+        </li>
+        <li class="">
+          <a class="nav-link fint2" href="Marketplace.html"
+            >Marketplace</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fint3" href="index.html">Kittie Factory</a>
+        </li>
+      </ul>
+    </nav>
+   
+
+    
+
+    <div class="col-lg-12 mainPageMidBar1" id="grad"></div>
+
+    <h3 class="kittiesYouOwnSign">Sell or Buy cats</h3>
+
+
+    <!-- this button shows all the cats that are available to buy -->
+    <button
+    id="buyACat"
+    type="button"
+    onclick="getInventory()"
+    class="btn btn-warning btn-lg btn-rounded start"
+>   Buy a Cat
+  </button>
+<button
+    id="sellACat"
+  type="button"
+  
+  class="btn btn-warning btn-lg btn-rounded start"
+>
+  Sell a Cat
+</button>
+
+<div class="alert alert-success hidden" id="greenAlert" role="alert">
+  
+</div>
+
+    <!-- Button "SELL" -->
+    <div class="row justify-content-md-center ">
+      <div id="catForSale" class="col-lg-3 m-2 align-self-start hidden">
+        <input type="image"  src="./sell.jpg" />
+      </div>
+    </div>
+
+    <!-- Modal for "Sell a Cat" -->
+    <div
+      class="modal"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kitties you own</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center" id="catsDiv"></div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- this shows all cats on sale -->
+    <div class="row justify-content-md-center" id="onSaleCats"></div>
+    
+      <!-- this puts a cat on sale -->
+    <button
+    type="button"
+    onclick="sellCat()"
+    class="btn btn-warning btn-sm btn-rounded hidden"
+    id="sell"
+  >
+    Sell me if you dare
+
+  </button>
+
+  <!-- this buys a cat -->
+  <button
+    type="button"
+    onclick="buyKitten()"
+    class="btn btn-warning btn-sm btn-rounded hidden"
+    id="buyButton"
+  >
+    Buy Me
+  </button>
+
+  <div class="input-group-prepend hidden" id="pikBuy1">
+    <span >ETH</span>
+  </div>
+
+  <!-- this is where you input the price you want to sell a cat for -->
+  <div class="input-group-prepend hidden" id="pik">
+    <input  id="catPrice" name="pin" maxlength="8" size="8">
+    <span class="input-group-text" id="basic-addon1">ETH</span>
+  </div>
+<!-- 
+  here we append the price amount -->
+  <div class="input-group-prepend hidden" id="pikBuy">
+    <span class="input-group-text" ></span>
+  </div>
+
+    <!-- button that return us to the list of the cats that are on sale -->
+   <button
+    type="button"
+    onclick="getInventory()"
+    class="btn btn-warning btn-sm btn-rounded hidden "
+    id="goBack"
+  >
+    go back 
+  </button>
+  <div>
+    <p id="inc1"> Ivan on tech inc. 2020</p>
+    </div>
+  </body>
+
+  <script src="assets/js/colors.js"></script>
+  <script src="assets/js/showCats/showCats.js"></script>
+  <script src="assets/js/showCats/buildCat.js"></script>
+
+  <script src="index.js"></script>
+</html>

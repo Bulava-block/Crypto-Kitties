@@ -1,0 +1,336 @@
+.catBox {
+  background-color: #e3dfd3;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-left: 65px;
+  padding-bottom: 100px;
+}
+
+.catBox1 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-left: 35px;
+  padding-bottom: 100px;
+}
+
+.catBox2 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-bottom: 100px;
+}
+
+.catContainer {
+  align-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.cattributes {
+  padding: 25px;
+  background-color: #ededed;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.cattributes1 {
+  position: relative;
+
+  left: 80px;
+  top: 20px;
+  background-color: yellow;
+}
+
+.dnaDiv {
+  position: absolute;
+
+  left: 30px;
+  bottom: 5px;
+}
+
+.mainPageMidBar {
+  border-bottom-right-radius: 600px 30px;
+  border-bottom-left-radius: 600px 30px;
+  margin-top: 30px;
+  padding-top: 200px;
+  padding-bottom: 350px;
+}
+
+.mainPageMidBar1 {
+  margin-top: 50px;
+  padding-top: 100px;
+}
+#grad {
+  background-image: linear-gradient(to right, red, red, red, #e0634c);
+}
+
+.persik {
+  color: black;
+  margin-left: 900px;
+  margin-top: -120px;
+}
+.persik1 {
+  color: black;
+  margin-left: 800px;
+  margin-top: -1450px;
+}
+#startMain {
+  position: absolute;
+  margin-left: 1400px;
+  margin-top: -40px;
+}
+
+#navbar {
+  margin-top: 20px;
+}
+
+.fint2 {
+  color: black;
+}
+.fint3 {
+  color: black;
+}
+.kittieFarm {
+  margin-left: 70px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.kittieFarm1 {
+  margin-left: 70px;
+  margin-top: -750px;
+  margin-bottom: 700px;
+}
+
+#startYouOwn {
+  margin-left: 1450px;
+  margin-top: -20px;
+}
+#startMarketplace {
+  margin-left: 1450px;
+  margin-top: -20px;
+}
+
+#startBreed {
+  margin-left: 1400px;
+  margin-top: -20px;
+}
+
+.nav1 {
+  color: black;
+}
+.kittiesYouOwnSign {
+  position: absolute;
+  top: 170px;
+  left: 700px;
+}
+h3 {
+  color: white;
+}
+
+.breedButton {
+  margin-left: 630px;
+  margin-top: 50px;
+}
+
+#mother {
+  margin-bottom: 300px;
+}
+
+#father {
+  margin-bottom: 300px;
+}
+
+#sell {
+  margin-left: 1000px;
+  margin-top: -400px;
+}
+
+#breedPage {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 700px;
+}
+
+#pik {
+  margin-left: 1000px;
+  margin-top: -450px;
+}
+
+#buyACat {
+  margin-left: 1000px;
+  margin-top: -75px;
+  position: absolute;
+}
+
+#sellACat {
+  margin-left: 500px;
+  margin-top: -75px;
+  position: absolute;
+}
+
+#cat1 {
+  margin-left: 1000px;
+  margin-top: -440px;
+  transform: rotate(20deg);
+
+  position: absolute;
+}
+
+#cat2 {
+  margin-left: 805px;
+  margin-top: -500px;
+  transform: rotate(10deg);
+  position: absolute;
+}
+
+#cat3 {
+  margin-left: 600px;
+  margin-top: -520px;
+
+  position: absolute;
+}
+#cat4 {
+  margin-left: 395px;
+  margin-top: -500px;
+
+  transform: rotate(-10deg);
+
+  position: absolute;
+}
+
+#cat5 {
+  margin-left: 200px;
+  margin-top: -440px;
+
+  transform: rotate(-20deg);
+
+  position: absolute;
+}
+.transbox {
+  background-color: #990000;
+  border-radius: 25px;
+  border-top-right-radius: 600px 200px;
+  border-top-left-radius: 600px 200px;
+
+  border: 1px solid black;
+  opacity: 0.6;
+  width: 900px;
+  height: 300px;
+  margin-left: 250px;
+  margin-top: -330px;
+  position: absolute;
+}
+
+#betterNormal {
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 100px;
+}
+
+#getOneofUs {
+  margin-left: 350px;
+  margin-top: 200px;
+
+  position: absolute;
+}
+
+#features {
+  margin-left: 450px;
+  margin-top: 500px;
+
+  position: absolute;
+}
+
+#noPee {
+  margin-left: 350px;
+  margin-top: 700px;
+
+  position: absolute;
+}
+#noPoo {
+  margin-left: 700px;
+  margin-top: 700px;
+
+  position: absolute;
+}
+#noFood {
+  margin-top: 700px;
+
+  position: absolute;
+}
+
+#poo {
+  margin-left: 700px;
+  margin-top: 750px;
+  position: absolute;
+}
+#pee {
+  margin-left: 350px;
+  margin-top: 750px;
+
+  position: absolute;
+}
+#food {
+  margin-left: 0px;
+  margin-top: 750px;
+
+  position: absolute;
+}
+
+#inc {
+  padding-top: 799px;
+  padding-left: 50px;
+}
+
+#inc1 {
+  padding-top: 600px;
+  padding-left: 50px;
+}
+#inc2 {
+  padding-top: 200px;
+  padding-left: 50px;
+}
+
+#buyButton {
+  margin-left: 1000px;
+  margin-top: -390px;
+  position: absolute;
+}
+#pikBuy {
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: -500px;
+  font-size: 500%;
+}
+
+#pikBuy1 {
+  position: absolute;
+  margin-top: -470px;
+  margin-left: 1050px;
+  font-size: 200%;
+}
+
+#priceToPay {
+  margin-left: 10px;
+  margin-top: 550px;
+}
+
+#goBack {
+  position: absolute;
+  margin-left: 1000px;
+  margin-top: -150px;
+}
+
+#privacy {
+  position: absolute;
+  margin-left: 660px;
+  margin-top: -250px;
+}
