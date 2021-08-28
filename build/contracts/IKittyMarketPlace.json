@@ -148,15 +148,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"TxType\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"MarketTransaction\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"buyKitty\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getAllTokenOnSale\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"listOfOffers\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"getOffer\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"active\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"removeOffer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_kittyContractAddress\",\"type\":\"address\"}],\"name\":\"setKittyContract\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"setOffer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{\"buyKitty(uint256)\":{\"notice\":\"Executes the purchase of _tokenId. Sends the funds to the seller and transfers the token using transferFrom in Kittycontract. Emits the MarketTransaction event with txType \\\"Buy\\\". Requirement: The msg.value needs to equal the price of _tokenId Requirement: There must be an active offer for _tokenId\"},\"getAllTokenOnSale()\":{\"notice\":\"Get all tokenId's that are currently for sale. Returns an empty arror if none exist.\"},\"getOffer(uint256)\":{\"notice\":\"Get the details about a offer for _tokenId. Throws an error if there is no active offer for _tokenId.\"},\"removeOffer(uint256)\":{\"notice\":\"Removes an existing offer. Emits the MarketTransaction event with txType \\\"Remove offer\\\" Requirement: Only the seller of _tokenId can remove an offer.\"},\"setKittyContract(address)\":{\"notice\":\"Set the current KittyContract address and initialize the instance of Kittycontract. Requirement: Only the contract owner can call.\"},\"setOffer(uint256,uint256)\":{\"notice\":\"Creates a new offer for _tokenId for the price _price. Emits the MarketTransaction event with txType \\\"Create offer\\\" Requirement: Only the owner of _tokenId can create an offer. Requirement: There can only be one active offer for a token at a time. Requirement: Marketplace contract (this) needs to be an approved operator when the offer is created.\"}}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Owner/Desktop/academy-kitties-template/contracts/IKittyMarketplace.sol\":\"IKittyMarketPlace\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Owner/Desktop/academy-kitties-template/contracts/IERC721.sol\":{\"keccak256\":\"0xe6b750f30aeb9386641e76878882ebad5d225371ad226a28f4a9b8e440a7fc72\",\"urls\":[\"bzz-raw://6cdc1f27dea4582fc9d2c5028a77f10f71f0fe0575033652544739dbdafa04e8\",\"dweb:/ipfs/QmNqYPAjQA2VSm5usLgCGYvAp2cVuM7UFLVP3qU7HXGfdR\"]},\"/C/Users/Owner/Desktop/academy-kitties-template/contracts/IERC721Receiver.sol\":{\"keccak256\":\"0x5e3d69e2dac0a248f61788dc0ecc2f655da9459b4ff0a22829c8b482dc70f853\",\"urls\":[\"bzz-raw://b04147b0b6dc370759d315c7629de2fbc3fd3c47c88e4cfa08711ee985778205\",\"dweb:/ipfs/QmQN8ecmq1npMdf9VYcXoHFWzgZQfUv6Yk22EQC1zgDevc\"]},\"/C/Users/Owner/Desktop/academy-kitties-template/contracts/IKittyMarketplace.sol\":{\"keccak256\":\"0xbe73429eb19c1c0f10b87cb91e890942425df61b31c12dd18c3025fe41172867\",\"urls\":[\"bzz-raw://46ac37a1f57b430e1775be09602f866a61b1b42aa4c9e8a0d7a1a5c131c1b84d\",\"dweb:/ipfs/QmPNsioG8zoYyHTTBZGe5ojGQGe4JLUWjte3Y7a7XEhYGd\"]},\"/C/Users/Owner/Desktop/academy-kitties-template/contracts/Kittycontract.sol\":{\"keccak256\":\"0x2877e3afe615adbfbd3dffdb70bfd1f199b60adbd92100671390a9936e77c7ba\",\"urls\":[\"bzz-raw://e4604123fb512aa8707325367f76ccff581e20b187d32544a3175264a5b5ec69\",\"dweb:/ipfs/QmUBvtbpNw2x9ooxwUNtx3iYCqryBpqKUJKQcWh8yDh1Na\"]},\"/C/Users/Owner/Desktop/academy-kitties-template/contracts/Ownable.sol\":{\"keccak256\":\"0x27f0cd16e87097185cc24adf756becf53cfe490bd26b38e5c4eaecdf2bdee1b4\",\"urls\":[\"bzz-raw://77b242681a19da6d9e630a67ae0145799a3ca564cca5847965bb4b2a241db145\",\"dweb:/ipfs/QmfT2Fp9zfnzYNMhc6A1KAYDgKHW4pu7YJxNw8VSyWVrCf\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"string\",\"name\":\"TxType\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"MarketTransaction\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"buyKitty\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getAllTokenOnSale\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"listOfOffers\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"getOffer\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"seller\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"active\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"removeOffer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"_kittyContractAddress\",\"type\":\"address\"}],\"name\":\"setKittyContract\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_price\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"setOffer\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{\"buyKitty(uint256)\":{\"notice\":\"Executes the purchase of _tokenId. Sends the funds to the seller and transfers the token using transferFrom in Kittycontract. Emits the MarketTransaction event with txType \\\"Buy\\\". Requirement: The msg.value needs to equal the price of _tokenId Requirement: There must be an active offer for _tokenId\"},\"getAllTokenOnSale()\":{\"notice\":\"Get all tokenId's that are currently for sale. Returns an empty arror if none exist.\"},\"getOffer(uint256)\":{\"notice\":\"Get the details about a offer for _tokenId. Throws an error if there is no active offer for _tokenId.\"},\"removeOffer(uint256)\":{\"notice\":\"Removes an existing offer. Emits the MarketTransaction event with txType \\\"Remove offer\\\" Requirement: Only the seller of _tokenId can remove an offer.\"},\"setKittyContract(address)\":{\"notice\":\"Set the current KittyContract address and initialize the instance of Kittycontract. Requirement: Only the contract owner can call.\"},\"setOffer(uint256,uint256)\":{\"notice\":\"Creates a new offer for _tokenId for the price _price. Emits the MarketTransaction event with txType \\\"Create offer\\\" Requirement: Only the owner of _tokenId can create an offer. Requirement: There can only be one active offer for a token at a time. Requirement: Marketplace contract (this) needs to be an approved operator when the offer is created.\"}}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IKittyMarketplace.sol\":\"IKittyMarketPlace\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IERC721.sol\":{\"keccak256\":\"0xe6b750f30aeb9386641e76878882ebad5d225371ad226a28f4a9b8e440a7fc72\",\"urls\":[\"bzz-raw://6cdc1f27dea4582fc9d2c5028a77f10f71f0fe0575033652544739dbdafa04e8\",\"dweb:/ipfs/QmNqYPAjQA2VSm5usLgCGYvAp2cVuM7UFLVP3qU7HXGfdR\"]},\"/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IERC721Receiver.sol\":{\"keccak256\":\"0x5e3d69e2dac0a248f61788dc0ecc2f655da9459b4ff0a22829c8b482dc70f853\",\"urls\":[\"bzz-raw://b04147b0b6dc370759d315c7629de2fbc3fd3c47c88e4cfa08711ee985778205\",\"dweb:/ipfs/QmQN8ecmq1npMdf9VYcXoHFWzgZQfUv6Yk22EQC1zgDevc\"]},\"/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IKittyMarketplace.sol\":{\"keccak256\":\"0xbe73429eb19c1c0f10b87cb91e890942425df61b31c12dd18c3025fe41172867\",\"urls\":[\"bzz-raw://46ac37a1f57b430e1775be09602f866a61b1b42aa4c9e8a0d7a1a5c131c1b84d\",\"dweb:/ipfs/QmPNsioG8zoYyHTTBZGe5ojGQGe4JLUWjte3Y7a7XEhYGd\"]},\"/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/Kittycontract.sol\":{\"keccak256\":\"0x4ace73c2d22c5b7209bf64157452a5dd43ebc7451f5878160194caf7fceb0a29\",\"urls\":[\"bzz-raw://da2d14434aba3160ac7d51a743e15945fe8ab8e8b1cfde5ed39fc7599416950f\",\"dweb:/ipfs/QmXR7EZwESHwuSZwALqoxoZppE4t7FEkjwL8dSBSR9Gnm7\"]},\"/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/Ownable.sol\":{\"keccak256\":\"0x27f0cd16e87097185cc24adf756becf53cfe490bd26b38e5c4eaecdf2bdee1b4\",\"urls\":[\"bzz-raw://77b242681a19da6d9e630a67ae0145799a3ca564cca5847965bb4b2a241db145\",\"dweb:/ipfs/QmfT2Fp9zfnzYNMhc6A1KAYDgKHW4pu7YJxNw8VSyWVrCf\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.0;\r\n\r\nimport \"./Kittycontract.sol\";\r\nimport \"./Ownable.sol\";\r\n\r\n/*\r\n * Market place to trade kitties (should **in theory** be used for any ERC721 token)\r\n * It needs an existing Kitty contract to interact with\r\n * Note: it does not inherit from the kitty contracts\r\n * Note: The contract needs to be an operator for everyone who is selling through this contract.\r\n */\r\ninterface IKittyMarketPlace {\r\n\r\n    event MarketTransaction(string TxType, address owner, uint256 tokenId);\r\n\r\n    /**\r\n    * Set the current KittyContract address and initialize the instance of Kittycontract.\r\n    * Requirement: Only the contract owner can call.\r\n     */\r\n    function setKittyContract(address _kittyContractAddress) external;\r\n\r\n    /**\r\n    * Get the details about a offer for _tokenId. Throws an error if there is no active offer for _tokenId.\r\n     */\r\n    function getOffer(uint256 _tokenId) external view returns ( address seller, uint256 price, uint256 index, uint256 tokenId, bool active);\r\n\r\n    /**\r\n    * Get all tokenId's that are currently for sale. Returns an empty arror if none exist.\r\n     */\r\n    function getAllTokenOnSale() external view  returns(uint256[] memory listOfOffers);\r\n\r\n    /**\r\n    * Creates a new offer for _tokenId for the price _price.\r\n    * Emits the MarketTransaction event with txType \"Create offer\"\r\n    * Requirement: Only the owner of _tokenId can create an offer.\r\n    * Requirement: There can only be one active offer for a token at a time.\r\n    * Requirement: Marketplace contract (this) needs to be an approved operator when the offer is created.\r\n     */\r\n    function setOffer(uint256 _price, uint256 _tokenId) external;\r\n\r\n    /**\r\n    * Removes an existing offer.\r\n    * Emits the MarketTransaction event with txType \"Remove offer\"\r\n    * Requirement: Only the seller of _tokenId can remove an offer.\r\n     */\r\n    function removeOffer(uint256 _tokenId) external;\r\n\r\n    /**\r\n    * Executes the purchase of _tokenId.\r\n    * Sends the funds to the seller and transfers the token using transferFrom in Kittycontract.\r\n    * Emits the MarketTransaction event with txType \"Buy\".\r\n    * Requirement: The msg.value needs to equal the price of _tokenId\r\n    * Requirement: There must be an active offer for _tokenId\r\n     */\r\n    function buyKitty(uint256 _tokenId) external payable;\r\n}\r\n",
-  "sourcePath": "C:\\Users\\Owner\\Desktop\\academy-kitties-template\\contracts\\IKittyMarketplace.sol",
+  "sourcePath": "C:\\Users\\Owner\\Desktop\\cryptycats\\Crypto-Kitties\\contracts\\IKittyMarketplace.sol",
   "ast": {
-    "absolutePath": "/C/Users/Owner/Desktop/academy-kitties-template/contracts/IKittyMarketplace.sol",
+    "absolutePath": "/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IKittyMarketplace.sol",
     "exportedSymbols": {
       "IKittyMarketPlace": [
         193
@@ -177,23 +177,23 @@
         "src": "0:23:2"
       },
       {
-        "absolutePath": "/C/Users/Owner/Desktop/academy-kitties-template/contracts/Kittycontract.sol",
+        "absolutePath": "/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/Kittycontract.sol",
         "file": "./Kittycontract.sol",
         "id": 140,
         "nodeType": "ImportDirective",
         "scope": 194,
-        "sourceUnit": 1587,
+        "sourceUnit": 1581,
         "src": "27:29:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/C/Users/Owner/Desktop/academy-kitties-template/contracts/Ownable.sol",
+        "absolutePath": "/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/Ownable.sol",
         "file": "./Ownable.sol",
         "id": 141,
         "nodeType": "ImportDirective",
         "scope": 194,
-        "sourceUnit": 1649,
+        "sourceUnit": 1643,
         "src": "58:23:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -809,7 +809,7 @@
     "src": "0:2341:2"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Owner/Desktop/academy-kitties-template/contracts/IKittyMarketplace.sol",
+    "absolutePath": "/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IKittyMarketplace.sol",
     "exportedSymbols": {
       "IKittyMarketPlace": [
         193
@@ -830,23 +830,23 @@
         "src": "0:23:2"
       },
       {
-        "absolutePath": "/C/Users/Owner/Desktop/academy-kitties-template/contracts/Kittycontract.sol",
+        "absolutePath": "/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/Kittycontract.sol",
         "file": "./Kittycontract.sol",
         "id": 140,
         "nodeType": "ImportDirective",
         "scope": 194,
-        "sourceUnit": 1587,
+        "sourceUnit": 1581,
         "src": "27:29:2",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/C/Users/Owner/Desktop/academy-kitties-template/contracts/Ownable.sol",
+        "absolutePath": "/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/Ownable.sol",
         "file": "./Ownable.sol",
         "id": 141,
         "nodeType": "ImportDirective",
         "scope": 194,
-        "sourceUnit": 1649,
+        "sourceUnit": 1643,
         "src": "58:23:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1467,7 +1467,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-11-05T22:12:24.318Z",
+  "updatedAt": "2021-08-22T02:44:44.094Z",
   "devdoc": {
     "methods": {}
   },

@@ -38,15 +38,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"onIERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Owner/Desktop/academy-kitties-template/contracts/IERC721Receiver.sol\":\"IERC721Receiver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Owner/Desktop/academy-kitties-template/contracts/IERC721Receiver.sol\":{\"keccak256\":\"0x5e3d69e2dac0a248f61788dc0ecc2f655da9459b4ff0a22829c8b482dc70f853\",\"urls\":[\"bzz-raw://b04147b0b6dc370759d315c7629de2fbc3fd3c47c88e4cfa08711ee985778205\",\"dweb:/ipfs/QmQN8ecmq1npMdf9VYcXoHFWzgZQfUv6Yk22EQC1zgDevc\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"onIERC721Received\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IERC721Receiver.sol\":\"IERC721Receiver\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IERC721Receiver.sol\":{\"keccak256\":\"0x5e3d69e2dac0a248f61788dc0ecc2f655da9459b4ff0a22829c8b482dc70f853\",\"urls\":[\"bzz-raw://b04147b0b6dc370759d315c7629de2fbc3fd3c47c88e4cfa08711ee985778205\",\"dweb:/ipfs/QmQN8ecmq1npMdf9VYcXoHFWzgZQfUv6Yk22EQC1zgDevc\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.12;\r\n\r\ninterface IERC721Receiver {\r\n    function onIERC721Received(\r\n        address operator,\r\n        address from,\r\n        uint256 tokenId,\r\n        bytes calldata data\r\n    ) external returns (bytes4);\r\n}\r\n",
-  "sourcePath": "C:\\Users\\Owner\\Desktop\\academy-kitties-template\\contracts\\IERC721Receiver.sol",
+  "sourcePath": "C:\\Users\\Owner\\Desktop\\cryptycats\\Crypto-Kitties\\contracts\\IERC721Receiver.sol",
   "ast": {
-    "absolutePath": "/C/Users/Owner/Desktop/academy-kitties-template/contracts/IERC721Receiver.sol",
+    "absolutePath": "/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IERC721Receiver.sol",
     "exportedSymbols": {
       "IERC721Receiver": [
         137
@@ -248,7 +248,7 @@
     "src": "0:232:1"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/Owner/Desktop/academy-kitties-template/contracts/IERC721Receiver.sol",
+    "absolutePath": "/C/Users/Owner/Desktop/cryptycats/Crypto-Kitties/contracts/IERC721Receiver.sol",
     "exportedSymbols": {
       "IERC721Receiver": [
         137
@@ -455,7 +455,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-11-05T22:12:24.317Z",
+  "updatedAt": "2021-08-22T02:44:44.091Z",
   "devdoc": {
     "methods": {}
   },

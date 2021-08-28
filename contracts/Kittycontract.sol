@@ -5,12 +5,10 @@ import "./IERC721Receiver.sol";
 import "./Ownable.sol";
 
 contract Kittycontract is IERC721, Ownable {
-    //what's public constant, internal constant, private constant?
     uint256 public constant CREATION_LIMIT_GEN0 = 10;
 
-    bytes4 internal constant MAGIC_ERC721_RECEIVED = bytes4(
-        keccak256("onERC721Received(address,address,uint256,bytes)")
-    );
+    bytes4 internal constant MAGIC_ERC721_RECEIVED =
+        bytes4(keccak256("onERC721Received(address,address,uint256,bytes)"));
 
     bytes4 private constant _INTERFACE_ID_ERC721 = 0x80ac58cd;
     bytes4 private constant _INTERFACE_ID_ERC165 = 0x01ffc9a7;
@@ -45,7 +43,7 @@ contract Kittycontract is IERC721, Ownable {
 
     //it executes only once when contract is deployed for the first time.
     constructor() public {
-        _createKitty(0, 0, 0, uint256(-1), address(0));
+        _createKitty(0, 0, uint256(-1), 0, address(0));
     }
 
     function breed(uint256 _dadId, uint256 _mumId) public returns (uint256) {
